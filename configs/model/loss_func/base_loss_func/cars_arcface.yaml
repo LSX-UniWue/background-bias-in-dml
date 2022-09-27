@@ -1,0 +1,13 @@
+# @package _global_
+
+model:
+  loss_func:
+    base_loss_func:
+      _target_: pytorch_metric_learning.losses.ArcFaceLoss
+      num_classes: 74
+      embedding_size: ${num_outputs}
+      margin: 20.52230893710211
+      scale: 49.501652066223656
+  lr_loss: 7.398518179078544e-06
+datamodule:
+  m_per_class: 1

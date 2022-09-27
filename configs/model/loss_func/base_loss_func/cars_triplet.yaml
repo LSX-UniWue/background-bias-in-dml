@@ -1,0 +1,6 @@
+# @package model
+
+loss_func:
+  base_loss_func:
+    _target_: pytorch_metric_learning.losses.TripletMarginLoss
+    margin: 0.11902737154413517

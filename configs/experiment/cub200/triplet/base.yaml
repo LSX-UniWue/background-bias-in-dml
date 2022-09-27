@@ -1,0 +1,24 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=cars_contrastive
+
+defaults:
+  - override /datamodule: cub200.yaml
+  - override /model: dml.yaml
+  - override /callbacks: default.yaml
+  - override /logger: csv.yaml
+  - override /trainer: default.yaml
+  - override /model/loss_func/base_loss_func: cub_triplet.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "cub200 triplet"
+
+seed: 42
+
+model:
+  loss_func:
+    weighting: 0.0

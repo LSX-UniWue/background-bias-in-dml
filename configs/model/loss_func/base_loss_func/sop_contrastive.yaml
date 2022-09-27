@@ -1,0 +1,7 @@
+# @package model
+
+loss_func:
+  base_loss_func:
+    _target_: pytorch_metric_learning.losses.ContrastiveLoss
+    pos_margin: 0.2850258234628094
+    neg_margin: 0.5130146609636679

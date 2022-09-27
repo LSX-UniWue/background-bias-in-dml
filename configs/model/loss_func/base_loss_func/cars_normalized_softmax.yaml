@@ -1,0 +1,12 @@
+# @package _global_
+
+model:
+  loss_func:
+    base_loss_func:
+      _target_: pytorch_metric_learning.losses.NormalizedSoftmaxLoss
+      num_classes: 74
+      embedding_size: ${num_outputs}
+      temperature: 0.08863250090946041
+  lr_loss: 0.011046164985524668
+datamodule:
+  m_per_class: 1

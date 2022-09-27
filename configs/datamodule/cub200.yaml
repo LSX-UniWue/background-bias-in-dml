@@ -1,0 +1,11 @@
+_target_: src.datamodules.cub200.Cub200DataModule
+
+root: ${data_dir}
+batch_size: 32
+num_workers: 4
+train_transform:
+  _target_: src.utils.transforms.TrainTransform
+val_transform:
+  _target_: src.utils.transforms.ValTransform
+# Use 4 for ranking based losses, 1 for classification losses
+m_per_class: 4

@@ -1,0 +1,8 @@
+# @package model
+
+loss_func:
+  base_loss_func:
+    _target_: pytorch_metric_learning.losses.MultiSimilarityLoss
+    alpha: 0.010000000000000505
+    beta: 50.601773762279336
+    base: 0.5624815816186126

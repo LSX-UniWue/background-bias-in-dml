@@ -1,0 +1,4 @@
+defaults:
+  - base_loss_func: cars_contrastive.yaml
+
+_target_: src.losses.loss.BaseLoss

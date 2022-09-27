@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - loss_func: loss.yaml
+
+_target_: src.models.dml_module.DMLModule
+lr: 0.000001
+weight_decay: 0.0001
+momentum: 0.9
+
+model:
+  _target_: src.models.components.bninception.BNInception
+  num_outputs: ${num_outputs}
+
+train_transform:
+  _target_: src.utils.transforms.TrainTransform
