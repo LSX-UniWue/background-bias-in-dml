@@ -8,7 +8,7 @@
 
 ## Description
 
-Code for our ICMV 2022 paper "On Background Bias in Deep Metric Learning" (Konstantin Kobs and Andreas Hotho).
+Code for our [ICMV 2022](http://icmv.org/) paper "On Background Bias in Deep Metric Learning" (Konstantin Kobs and Andreas Hotho).
 
 Abstract:
 >Deep Metric Learning trains a neural network to map input images to a lower-dimensional embedding space such that similar images are closer together than dissimilar images.
