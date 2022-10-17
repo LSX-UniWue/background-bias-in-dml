@@ -71,5 +71,10 @@ The ground truth masks are in `notebooks/gt_masks` and you can generate the metr
 If you use the code provided here, please cite our paper:
 
 ```
-TODO
+@article{kobs2022background,
+  title={On Background Bias in Deep Metric Learning},
+  author={Kobs, Konstantin and Hotho, Andreas},
+  journal={arXiv preprint arXiv:2210.01615},
+  year={2022}
+}
 ```
